@@ -75,6 +75,10 @@ $role.Actions.Add("Microsoft.Security/locations/jitNetworkAccessPolicies/read")
 $role.Actions.Add("Microsoft.Security/locations/jitNetworkAccessPolicies/initiate/action")
 $role.Actions.Add("Microsoft.Security/policies/read")
 $role.Actions.Add("Microsoft.Network/publicIPAddresses/read")
+$role.Actions.Add("Microsoft.Network/networkWatchers/read")
+$role.Actions.Add("Microsoft.Network/networkWatchers/write")
+$role.Actions.Add("Microsoft.Network/networkWatchers/networkConfigurationDiagnostic/read")
+
 if (!($forApiOnly))
 {
 	# $role.Actions.Add("Microsoft.Compute/virtualMachines/write")
